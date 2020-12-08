@@ -7,8 +7,9 @@ function SongList(props){
     return (
         <Card key={song.id}>
           <Card.Content>
-            <Card.Header>{song.album}</Card.Header>
-            <Card.Description>{song.artist}</Card.Description>
+            <Card.Header>{song.title}</Card.Header>
+            <Card.Description>Artist: {song.artist}</Card.Description>
+            <Card.Description>Album: {song.album}</Card.Description>
           </Card.Content>
           <Card.Content extra>
             <Button>DeleteSong</Button>
